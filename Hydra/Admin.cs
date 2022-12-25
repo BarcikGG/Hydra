@@ -170,6 +170,8 @@ namespace Hydra
                     user_info.role_table = role_new;
                     users.Add(user_info);
                     Class_save.Serialize(users, "users.json");
+                    Class_arrow.page = 0;
+                    Class_arrow.deep = 1;
                     Hello(y);
                     break;
             }

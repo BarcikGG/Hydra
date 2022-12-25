@@ -150,6 +150,8 @@ namespace Hydra
                     staff_info.amount_table = amount_new;
                     goods.Add(staff_info);
                     Class_save.Serialize(goods, "goods.json");
+                    Class_arrow.page = 2;
+                    Class_arrow.deep = 1;
                     Hello(y);
                     break;
             }
